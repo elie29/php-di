@@ -1,15 +1,14 @@
 <?php
-
 namespace App\Controller;
 
-use App\Service\Random\Random;
+use App\Service\Random\IRandom;
 
 class IndexController
 {
 
     private $random;
 
-    public function __construct(Random $random)
+    public function __construct(IRandom $random)
     {
         $this->random = $random;
     }

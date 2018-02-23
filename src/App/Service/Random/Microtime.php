@@ -4,7 +4,7 @@ namespace App\Service\Random;
 
 use App\Service\Logger\ILogger;
 
-class Random implements IRandom
+class Microtime implements IRandom
 {
 
   private $logger = null;
@@ -15,8 +15,8 @@ class Random implements IRandom
   }
 
   public function getRandom() {
-    $this->logger->log('Random');
-    return dechex(rand());
+    $this->logger->log('microtime');
+    return dechex(microtime(true));
   }
 
 }
