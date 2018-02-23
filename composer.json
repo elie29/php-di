@@ -1,0 +1,27 @@
+{
+    "name": "php-di",
+    "description": "PHP-DI use case",
+    "type": "project",
+    "require": {
+        "php": "^7.1",
+        "php-di/php-di": "^6.0",
+        "symfony/var-dumper": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elie NEHME",
+            "email": "elie29@gmail.com"
+        }
+    ],
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public"
+    },
+    "config": {
+        "process-timeout": 9000
+    }
+}
